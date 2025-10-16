@@ -204,7 +204,7 @@ The VideoExporter class exports the Edit to a MP4 video file encoded in h264 and
 
 ```typescript
 const exporter = new VideoExporter(edit, canvas);
-await exporter.export("my-video.mp4", 25); // filename, fps
+await exporter.export("my-video.mp4", 30); // filename, fps (optional, defaults to 30)
 ```
 
 **📖 For a detailed explanation of how the export process works, see:**
@@ -494,4 +494,4 @@ Creates a new exporter for the provided Edit and Canvas.
 
 #### Methods
 
-- `async export(filename: string = "shotstack-export.mp4", fps: number = 25)` - Export the edit to an MP4 video file
+- `async export(filename: string = "shotstack-export.mp4", fps?: number)` - Export the edit to an MP4 video file. FPS defaults to the value set in `edit.output.fps`, or 30 if not specified.
