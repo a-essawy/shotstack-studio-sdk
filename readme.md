@@ -207,6 +207,10 @@ const exporter = new VideoExporter(edit, canvas);
 await exporter.export("my-video.mp4", 25); // filename, fps
 ```
 
+**📖 For a detailed explanation of how the export process works, see:**
+- [Export Process Documentation](docs/EXPORT_PROCESS.md) - Comprehensive guide to the export system
+- [Export Flow Diagram](docs/EXPORT_FLOW_DIAGRAM.md) - Visual representation of the export workflow
+
 ## Theming
 
 Shotstack Studio supports theming for visual components. Currently, theming is available for the Timeline component, with Canvas theming coming in a future releases.
